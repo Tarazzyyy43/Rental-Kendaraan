@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/csskategori.css">
+    <title>FastTrack Rental</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#kategori">Kategori</a></li>
+                <li><a href="#mobil">Mobil Tersedia</a></li>
+                <li><a href="#sewa">Formulir Sewa Mobil</a></li>
+                <li><a href="index.html">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section kategori" id="kategori">
+            <div class="container">
+                <ul class="kategori-list">
+                    <li>
+                        <div class="kategori-card">
+                            <figure class="card-banner">
+                                <img src="assets/car-1.jpg" alt="Mobil 1" loading="lazy" width="240" height="160">
+                            </figure>
+                            <div class="card-content">
+                                <div class="card-title-wrapper">
+                                    <h3 class="h3 card-title">
+                                        <a href="#">Toyota RAV4</a>
+                                    </h3>
+                                </div>
+                                <ul class="card-list">
+                                    <li class="card-list-item">
+                                        <span class="card-item-text">Harga Sewa: Rp 500.000/hari</span>
+                                    </li>
+                                    <li class="card-list-item">
+                                        <span class="card-item-text">Kapasitas: 5 Orang</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <div class="kategori-card">
+                            <figure class="card-banner">
+                                <img src="assets/car-2.jpg" alt="Mobil 2" loading="lazy" width="240" height="160">
+                            </figure>
+                            <div class="card-content">
+                                <div class="card-title-wrapper">
+                                    <h3 class="h3 card-title">
+                                        <a href="#">Honda CR-V</a>
+                                    </h3>
+                                </div>
+                                <ul class="card-list">
+                                    <li class="card-list-item">
+                                        <span class="card-item-text">Harga Sewa: Rp 550.000/hari</span>
+                                    </li>
+                                    <li class="card-list-item">
+                                        <span class="card-item-text">Kapasitas: 5 Orang</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <div class="kategori-card">
+                            <figure class="card-banner">
+                                <img src="assets/car-3.jpg" alt="Mobil 3" loading="lazy" width="240" height="160">
+                            </figure>
+                            <div class="card-content">
+                                <div class="card-title-wrapper">
+                                    <h3 class="h3 card-title">
+                                        <a href="#">Suzuki Ertiga</a>
+                                    </h3>
+                                </div>
+                                <ul class="card-list">
+                                    <li class="card-list-item">
+                                        <span class="card-item-text">Harga Sewa: Rp 400.000/hari</span>
+                                    </li>
+                                    <li class="card-list-item">
+                                        <span class="card-item-text">Kapasitas: 7 Orang</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+        
+                    <li>
+                        <div class="kategori-card">
+                            <figure class="card-banner">
+                                <img src="assets/car-4.jpg" alt="Mobil 4" loading="lazy" width="240" height="160">
+                            </figure>
+                            <div class="card-content">
+                                <div class="card-title-wrapper">
+                                    <h3 class="h3 card-title">
+                                        <a href="#">Daihatsu Xenia</a>
+                                    </h3>
+                                </div>
+                                <ul class="card-list">
+                                    <li class="card-list-item">
+                                        <span class="card-item-text">Harga Sewa: Rp 350.000/hari</span>
+                                    </li>
+                                    <li class="card-list-item">
+                                        <span class="card-item-text">Kapasitas: 7 Orang</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+
+        <section id="mobil">
+            <h2>Daftar Mobil Tersedia</h2>
+            <table>
+                <tr>
+                    <th>Nama Mobil</th>
+                    <th>Harga Sewa</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Toyota RAV4</td>
+                    <td>Rp 500.000/hari</td>
+                    <td>Tersedia</td>
+                </tr>
+                <tr>
+                    <td>Honda CR-V</td>
+                    <td>Rp 550.000/hari</td>
+                    <td>Tersedia</td>
+                </tr>
+                <tr>
+                    <td>Suzuki Ertiga</td>
+                    <td>Rp 400.000/hari</td>
+                    <td>Tidak Tersedia</td>
+                </tr>
+                <tr>
+                    <td>Daihatsu Xenia</td>
+                    <td>Rp 350.000/hari</td>
+                    <td>Tidak Tersedia</td>
+                </tr>
+            </table>
+        </section>
+        
+
+        <section id="sewa">
+            <h2>Formulir Sewa Mobil</h2>
+            <form action="#" method="post">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required>
+
+                <label for="mobil-sewa">Mobil yang Disewa:</label>
+                <select id="mobil-sewa" name="mobil-sewa" required>
+                    <option value="toyota-fortuner">Toyota Fortuner</option>
+                    <option value="daihatsu-xenia">Daihatsu Xenia</option>
+                    <option value="honda-civic">Honda Civic</option>
+                    <option value="mazda-mx5">Mazda MX-5</option>
+                </select>
+
+                <label for="tanggal">Tanggal Sewa:</label>
+                <input type="date" id="tanggal" name="tanggal" required>
+
+                <button type="submit">Sewa Mobil</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FastTrack Rental. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
